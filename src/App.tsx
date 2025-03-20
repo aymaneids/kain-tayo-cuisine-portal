@@ -13,6 +13,8 @@ import Menu from "./pages/Menu";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 // Components
 import Navbar from "./components/Navbar";
@@ -35,9 +37,9 @@ const App = () => (
             <Route path="/menu" element={<Menu />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
-            {/* Add privacy and terms routes */}
-            <Route path="/privacy" element={<NotFound />} />
-            <Route path="/terms" element={<NotFound />} />
+            {/* Privacy and terms routes */}
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
             {/* Catch-all route */}
             <Route path="*" element={<NotFound />} />
           </Routes>
